@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Koros Emmanuel | About Me</title>
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- typed cdn script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>
+      #loadingMessage {
+          font-size: 18px;
+          color: #4CAF50;
+          margin-top: 10px;
+      }
+          .logo-container h3 i {
+      margin-left: 5px; /* Adds space between Koros and the cloud icon */
+      font-size: 0.9em; /* Adjust the size of the cloud icon if needed */
+  }
+   .modal {
+          display: none;
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          justify-content: center;
+          align-items: center;
+      }
+      .modal-content {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          text-align: center;
+      }
+      /* Styles for the Verify Email button */
+  #verifyEmailButton {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+  }
+  
+  #verifyEmailButton:hover {
+      background-color: #45a049;
+  }    
+  .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      font-size: 18px; /* Adjust as needed */
+      margin-right: 5px;
+  }
+  
+  .footer-logo i {
+      margin-left: 5px;
+  }
+  
+         
+  </style>
+
+  </head>
+    <!--- Navigation Bar --->
+<body>
+      <!-- Navbar -->
+<header class="header">
+  <div class="logo-container">
+     <h3>Koros <i class="fa-solid fa-cloud"></i></h3>
+  </div> 
+  <button class="sidebar-toggle" aria-label="Toggle navigation">&#9776;</button>
+  <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <!-- <a href="Documents/Professional_Documents.pdf">Professional Documents</a> -->
+      <a href="#contacts">Contact</a>
+      <a href="#social">Socials</a>
+  </nav>
+  <!-- sidebar -->
+  <div class="sidebar">
+      <button class="sidebar-close" aria-label="Close sidebar">&times;</button>
+      <nav class="sidebar-nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Me</a>
+          <!-- <a href="Documents/Professional_Documents.pdf">Professional Documents</a> -->
+          <a href="#contacts">Contact</a>
+          <a href="#social">Socials</a>
+      </nav>
+  </div>
+</header>
+  <!--- About Me title --->
+  <div class="about_me_title">
+    <div class="about_me_text">
+      <h1>ABOUT ME</h1>
+    </div>
+  </div>
+  <!--- Section 1: About Me again --->
+  <div style="background-color: var(--alternative)">
+  <div style="max-width: 1800px; margin: 0 auto !important; float: none !important;">
+  <div class="grid_background_col2">
+      <div class="about_me_center">
+        <img class="me_image" src="./styles/images/image.jpeg" alt=""></img>
+          <p style="padding-right: 2.5%; padding-left:2.5%;">I am a GIS Analyst with practical skills in 
+            spatial data analysis, remote sensing, land surveying, and GIS application development. 
+            I have a strong foundation in both geospatial and programming tools, enabling me to deliver 
+            tailor-made, innovative spatial solutions across a range of industries. 
+            I've helped with hydrological modeling using the SWAT model, spatial data cleaning and
+             analysis for agricultural information, and setting up role-based access to GIS data. 
+             I have experience with software like ArcGIS Pro, QGIS, RStudio, SNAP, Agisoft, AutoCAD, AchiCAD 
+             and PostgreSQL. </p>           
+          <br></br> 
+          <br></br>
+          <br></br>
+            <h2  style="padding-right: 2.5%; padding-left:2.5%;">What I Can Do:</h2>
+            <ul style="padding-right: 2.5%; padding-left:2.5%;">
+              <p>I specialize in drone image analysis, processing UAV imagery for mapping, classification, 
+                and 3D modeling using tools like Pix4D and Agisoft Metashape. My remote sensing experience 
+                includes land cover classification, vegetation indices, suitability analysis, and change 
+                detection using Google Earth Engine, SNAP, and QGIS. I have conducted spatial analysis and 
+                mapping using ArcGIS Pro, QGIS, and RStudio to support planning and resource management 
+                decisions. Additionally, I’ve performed hydrological modeling with SWAT to simulate 
+                surface and subsurface water flows and evaluate land use impacts.</p>
+              <p>On the programming side, I have developed a GIS website using Python, React.js, Node.js, 
+                HTML, and CSS, integrated with MongoDB for spatial data access and visualization. 
+                I’ve also created a music streaming website (locally hosted) and am currently developing
+                 an e-commerce platform with PayPal and M-Pesa integration. I have experience in WebGIS 
+                 integration through publishing spatial data via GeoServer and PostgreSQL/PostGIS with 
+                 role-based access. I also implement and manage Spatial Data Infrastructure (SDI), sharing 
+                 data through public platforms using tools like ngrok. My database management skills 
+                 include working with PostgreSQL and MySQL for handling both spatial and non-spatial 
+                 datasets.</p>
+            </ul>
+          <p style="padding-right: 2.5%; padding-left:2.5%;">I hope to continue my career in remote 
+            sensing, GIS, and Data science. My goal is to increase skills in programming and utilize 
+            technology to better understand our environment. My background combines GIS and programming,
+             which allows me to create solutions for real-world issues—from environmental studies to 
+             online mapping applications.</p>
+          
+      </div>
+        </div>
+      </div>
+    </div>
+      
+      <!--- Section 1: About Me again --->
+      
+    </div>
+ <!-- Skills & Expertise Section -->
+<section id="skills" class="skills-section">
+  <div class="container">
+      <h2>Skills & Expertise</h2>
+      <div class="skills-cards">
+          <!-- Geospatial Development -->
+          <div class="skill-card">
+              <div class="card-icon">
+                  <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <h3>Geospatial Development</h3>
+              <ul class="skill-list">
+                  <li><span class="bullet-arrow">&#x2192;</span> Web Mapping (Leaflet, MapLibre, OpenLayers)</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> GIS Application Development</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> API Integration (Google Maps, Mapbox)</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Spatial Database Management</li>
+              </ul>
+          </div>
+
+          <!-- Remote Sensing & Image Analysis -->
+          <div class="skill-card">
+              <div class="card-icon">
+                  <i class="fas fa-satellite"></i>
+              </div>
+              <h3>Remote Sensing & Image Analysis</h3>
+              <ul class="skill-list">
+                  <li><span class="bullet-arrow">&#x2192;</span> Satellite Image Processing</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Change detection</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Object-based image analysis</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Land Use/Land Cover Classification</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Machine learning for image classification</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Ground truth data collection</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Google Earth Engine (GEE)</li>
+              </ul>
+          </div>
+
+          <!-- Geospatial Data Science -->
+          <div class="skill-card">
+              <div class="card-icon">
+                  <i class="fas fa-chart-area"></i>
+              </div>
+              <h3>Geospatial Data Science</h3>
+              <ul class="skill-list">
+                  <li><span class="bullet-arrow">&#x2192;</span> Spatial Data Processing (Python, R)</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Machine Learning for GIS</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Spatial Statistics & Modelling</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Big Data GIS (PostGIS, GeoServer)</li>
+                  <li><span class="bullet-arrow">&#x2192;</span> Data Science</li>
+                </ul>
+          </div>
+      </div>
+  </div>
+          <br>
+          <div>
+            <h2 style="color: var(--accent2); font-weight: bold; font-family: 'Montserrat', sans-serif;">Certificates</h2>
+            <br>
+            <p>Bachelor's of science in Geospatial Information Science,  <i>June 2024 – Present</i></p>
+            <p>Introduction to applied data science with python, Simplilearn  <i>July 2024 – Present</i></p>
+          </div>
+          <div class="button_buffer">
+            <a class="live-preview" href="Documents/Curriculum_Vitae.pdf">Download Resume</a>
+          </div>
+      </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+
+      <!-- <h2>Talk to me</h2> -->
+        <!--- Section 4: Contact Information --->
+    <div id="contacts" class="about_me_interests_cont_pg2">
+      <div class="about_me_interests_pg2">  
+        <h2 style="font-family: 'Montserrat', sans-serif;color: white;" >Contacts</h2>
+        <p>Please feel free to contact me through my phone number or email address below.</p>
+        <h2 style="font-family: 'Montserrat', sans-serif;color: white;">Tel. Phone</h2>
+        <p>+254 702782956</p>
+        <h2 style="font-family: 'Montserrat', sans-serif;color: white;">Email</h2>
+        <p>emmanuelkoros2@gmail.com</p>
+      </div>
+    </div>
+
+
+
+<footer class="footer">
+  <div class="footer-content">
+      <p>&copy; <span class="footer-logo">Koros <i class="fa-solid fa-cloud"></i></span> <span id="current-year"></span> | All rights reserved.</p>
+    
+      <div class="social-links">
+          <a href="https://github.com/korosemmanuel" class="social-link"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-stack-overflow"></i></a>
+          <a href="https://www.linkedin.com/in/koros-emmanuel-251751281/" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://wa.me/254702782956" id="social" class="social-link" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+          </a>
+      </div>
+  </div>
+</footer>
+
+
+  <!-- scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+  <script src="scripts/animation.js"></script>
+  <script>
+// Dynamically set the current year
+document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
+  <!-- <script src="scripts/main.js"></script> -->
+   <!-- sidebar toggle -->
+   <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const sidebarToggle = document.querySelector('.sidebar-toggle');
+          const sidebar = document.querySelector('.sidebar');
+          const sidebarClose = document.querySelector('.sidebar-close');
+      
+          sidebarToggle.addEventListener('click', function() {
+              sidebar.classList.toggle('open');
+          });
+      
+          sidebarClose.addEventListener('click', function() {
+              sidebar.classList.remove('open');
+          });
+      });
+      </script>
+
+  </body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WebGIS</title>
+    <link rel="stylesheet" href="../styles/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- typed cdn script -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ 
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <style>
+      #loadingMessage {
+          font-size: 18px;
+          color: #4CAF50;
+          margin-top: 10px;
+      }
+          .logo-container h3 i {
+      margin-left: 5px; /* Adds space between Koros and the cloud icon */
+      font-size: 0.9em; /* Adjust the size of the cloud icon if needed */
+  }
+   .modal {
+          display: none;
+          position: fixed;
+          z-index: 1000;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          justify-content: center;
+          align-items: center;
+      }
+      .modal-content {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 5px;
+          text-align: center;
+      }
+      /* Styles for the Verify Email button */
+  #verifyEmailButton {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+  }
+  
+  #verifyEmailButton:hover {
+      background-color: #45a049;
+  }    
+  .footer-logo {
+      display: inline-flex;
+      align-items: center;
+      font-size: 18px; /* Adjust as needed */
+      margin-right: 5px;
+  }
+  
+  .footer-logo i {
+      margin-left: 5px;
+  }
+  
+         
+  </style>
+    <style>
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+  </style>
+  </head>
+    <!--- Navigation Bar --->
+<body>
+      <!-- Navbar -->
+<header class="header">
+  <div class="logo-container">
+     <h3>Koros <i class="fa-solid fa-cloud"></i></h3>
+  </div> 
+  <button class="sidebar-toggle" aria-label="Toggle navigation">&#9776;</button>
+  <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About Me</a>
+      <!-- <a href="#projects">Portfolio</a> -->
+      <a href="#contacts">Contact</a>
+      <a href="#social">Socials</a>
+  </nav>
+  <!-- sidebar -->
+  <div class="sidebar">
+      <button class="sidebar-close" aria-label="Close sidebar">&times;</button>
+      <nav class="sidebar-nav-links">
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About Me</a>
+          <!-- <a href="#projects">Portfolio</a> -->
+          <a href="#contacts">Contact</a>
+          <a href="#social">Socials</a>
+      </nav>
+  </div>
+</header>
+
+  <!--- About Me title --->
+  <div class="about_me_title">
+    <div class="about_me_text">
+      <h1>PORTFOLIO</h1>
+    </div>
+  </div>
+  <!--- Section 2: Project Title & Website Image --->
+  <!-- Desktop -->
+  <div style="background-color: var(--alternative)">
+  <div style="max-width: 1600px; margin: 0 auto !important; float: none !important;">
+  <div class="grid_background_col2">
+    <div class="desktop">
+      <div class="about_cont">
+        <div class="about-left">
+          <img src="./pimages/qgisgeoserver.jpg" class="project-image">
+        </div>
+        <div class="about-right">
+          <div class="about-text">
+            <h2 style="text-align:center; padding-bottom: 5px; color: var(--darktext); font-size: 36px;font-weight: bold; font-family: 'Montserrat', sans-serif;">Simple Infrastructure for a Water and Sanitation Company</h2>
+          <h3 style="font-style: italic; text-align: center; font-weight:normal;"><i>Development of a simple infrastructure for a water and sanitation company leveraging spatial data with the integration of qgis, postgreSQL database, geoserver and web technologies.</i></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="grid_background_col2" style="margin-left: 2.5%;">
+    <p style="color: var(--darktext); font-family: 'Montserrat', sans-serif;"><b>Project Description:</b></p>
+    
+    <h2>Introduction</h2>
+    <p >This report details the development of a simple infrastructure for a Water and Sanitation Company 
+        within a Nairobi county. The project aims to create an integrated system that leverages spatial data to 
+        manage the company's operations effectively. This involves setting up a Spatial Data Infrastructure (SDI) 
+        using various tools, including pgAdmin for database management, QGIS for geographic information system (GIS) 
+        visualization, GeoServer for map serving, and web technologies (HTML, CSS, JavaScript) to build a web-based 
+        GIS interface. Each phase of the project is described in detail, highlighting the steps taken, challenges faced, 
+        and outcomes achieved.</p>
+    
+    <h2>Datasets</h2>
+    <p >The project required several datasets to comprehensively represent the county's geographic and 
+        infrastructure details. These datasets include:</p>
+    <ul style="list-style-type: disc; margin-left: 5%;">
+        <li>County shapefile data</li>
+        <li>Hospital shapefile data</li>
+        <li>Towns shapefile data</li>
+        <li>Roads data</li>
+        <li>Rivers data</li>
+        <li>Sub-counties shapefile data</li>
+    </ul>
+    <p >These datasets form the backbone of the spatial database and are critical for the functionality of the Water 
+        and Sanitation Company's GIS infrastructure.</p>
+    
+    <h2>Database Setup</h2>
+    <p >The database setup was carried out using PostgreSQL, a popular database management tool. 
+        The first step was to create a new database named SDI. Within this database, a schema called Nairobi was 
+        established to organize the data efficiently.</p>
+        <img src="pimages/nai_schema.PNG" alt="QGIS Setup">
+    <p >The Nairobi schema includes various tables representing counties, hospitals, towns, roads, and rivers.
+         These tables are interconnected to reflect real-world relationships, enabling comprehensive data analysis 
+         and visualization. For example, the roads table is linked to the towns and counties tables,
+          facilitating route analysis and infrastructure planning.</p>
+    
+    <h2>Configuring QGIS</h2>
+    <p>With the database in place, the next step was to configure QGIS to visualize the spatial data stored in the 
+        PostGIS database. The connection process involved opening QGIS and adding PostGIS layers by entering the database 
+        connection details and testing the connection to ensure accuracy.</p>
+    <p>Once connected, the vector layers representing counties, hospitals, towns, roads, and rivers were loaded into QGIS.
+         This setup allows the Water and Sanitation Company's staff to view and analyze the spatial data, making it 
+         easier to plan and manage infrastructure projects.</p>
+         <img src="pimages/qgis-postgis-conn.PNG" alt="QGIS Setup">
+         <img src="pimages/qgis-postgis-layers.PNG" alt="QGIS Setup">
+    <p>Permissions were configured to ensure that different departments within the company had access to the 
+        specific data they needed. For example, the engineering department could access road and river data, 
+        while the health department could view hospital and town data. This granular level of control enhances 
+        data security and ensures efficient data management.</p>
+    
+    <h2>GeoServer Configuration</h2>
+    <p>GeoServer was used to serve the maps and make the spatial data accessible via web services. 
+        The first task was to set up access rights for different departments. Each department's head was assigned 
+        specific permissions based on their role and data requirements.</p>
+    <p>The configuration process involved creating user roles in GeoServer and assigning appropriate access 
+        levels to each role. For instance, the mapping department was granted full access to all datasets, 
+        while other departments had restricted access based on their needs.</p>
+    <h3>Health Department Geoserver</h3>
+        <img src="pimages/log-health-dept.PNG" alt="QGIS Setup">
+    <h3>Engineering Department Geoserver</h3>
+        <img src="pimages/log-dept-server.PNG" alt="QGIS Setup">
+    <p>Once the access rights were configured, the next step was to establish a connection between GeoServer
+         and the webGIS interface. This connection allows GeoServer to serve maps that can be integrated into
+          the web-based GIS application, enabling real-time data visualization and analysis.</p>
+    
+    <h2>WebGIS Integration</h2>
+    <p>The final phase of the project involved integrating the spatial data into a web-based GIS application. 
+        This was achieved using HTML, CSS, and JavaScript to build a user-friendly interface that displays the 
+        organization's data.</p>
+    <p>GeoServer was connected to the webGIS application to serve maps, providing an interactive platform for 
+        viewing and analyzing spatial data. The application allows users to interact with the maps, query data, 
+        and generate reports based on their needs.</p>
+        <img src="pimages/wsc.PNG" alt="QGIS Setup">
+        <br>
+        <img src="pimages/wsc1.PNG" alt="QGIS Setup">
+    
+    <h2>Conclusion</h2>
+    <p>This project successfully developed a simple infrastructure for a Water and Sanitation Company using a 
+        combination of database management, GIS visualization, map serving, and web technologies. 
+        The project involved setting up a database, configuring QGIS, assigning access rights in GeoServer, 
+        and integrating the data into a webGIS.</p>
+  </div>
+  </div>
+  <!--- Section 5: Contact Information --->
+
+    <!-- Contact Section -->
+
+      <!-- <h2>Talk to me</h2> -->
+        <!--- Section 4: Contact Information --->
+        <div id="contacts" class="about_me_interests_cont_pg2">
+          <div class="about_me_interests_pg2">  
+      <h2 style="font-family: 'Montserrat', sans-serif;color: white;" >Contacts</h2>
+      <p>Please feel free to contact me through my phone number or email address below.</p>
+      <h2 style="font-family: 'Montserrat', sans-serif;color: white;">Tel. Phone</h2>
+      <p>+254 702782956</p>
+      <h2 style="font-family: 'Montserrat', sans-serif;color: white;">Email</h2>
+      <p>emmanuelkoros2@gmail.com</p>
+      </div>
+        </div>
+     
+<footer class="footer">
+  <div class="footer-content">
+      <p>&copy; <span class="footer-logo">Koros <i class="fa-solid fa-cloud"></i></span> <span id="current-year"></span> | All rights reserved.</p>
+    
+      <div class="social-links">
+          <a href="https://github.com/korosemmanuel" class="social-link"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-link"><i class="fa-brands fa-stack-overflow"></i></a>
+          <a href="https://www.linkedin.com/in/koros-emmanuel-251751281/" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://wa.me/254702782956" id="social" class="social-link" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+          </a>
+      </div>
+  </div>
+</footer>
+
+  </body>
+</html>
