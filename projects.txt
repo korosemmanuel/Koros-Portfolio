@@ -1,7 +1,0 @@
-flood mapping  >>>> complete
-hydrological modelling
-webmap covid19 mongodb >>> complete
-qgis geoserver postgreSQL >>>>complete
-music application
-achicad projects   >>> complete
-
